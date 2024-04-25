@@ -22,7 +22,7 @@
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    height: 2000px;
+    height: 3000px;
 }
 
 header{
@@ -163,6 +163,10 @@ header{
 
 
 /* Movie Section Start */
+.movies{
+    padding: 70px;
+
+}
 
 .heading{
     max-width: 968px;
@@ -254,4 +258,46 @@ header{
 }
 
 /* contact section end */
+
+/* footer section start */
+
+.footer{
+    /* background-color: grey; */
+    max-width: 968px;
+    margin:20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .social{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footer .social .fa-brands{
+    background-color: var(--main-color);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 4px solid rgba(7,3,2,0.1);
+    color:var(--text-color);
+    transition: 0.5s;
+}
+
+.footer .social .fa-brands:hover{
+    filter: brightness(0.8);
+}
+
+.copyright{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 20px;
+    padding:10px 0;
+    text-transform: uppercase;
+}
+
+/* footer section end */
 
