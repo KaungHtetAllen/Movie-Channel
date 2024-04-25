@@ -209,3 +209,49 @@ header{
 }
 
 /* Movie Section End */
+
+/* contact section start */
+
+.contact{
+    max-width: 968px;
+    /* background-color: aqua; */
+    margin:50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact form{
+    background-color: var(--text-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form .email{
+    width: 200px;
+    border: none;
+    outline: none;
+    background-color: var(--text-color);
+
+}
+
+.contact .btn{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+/* contact section end */
+
