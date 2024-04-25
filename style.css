@@ -19,10 +19,20 @@
     --bg-color:#020307;
 }
 
+/* Custom Scroll Bar */
+html::-webkit-scrollbar{
+    width:0.5rem;
+    background-color: var(--bg-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 5rem;
+}
+
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    height: 3000px;
 }
 
 header{
@@ -47,6 +57,7 @@ header{
     align-items: center;
     font-size: 18px;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 .logo i{
@@ -301,3 +312,100 @@ header{
 
 /* footer section end */
 
+/* Responsive section start  */
+
+
+@media (max-width:1080px) {
+    .home-text{
+        padding: 0 100px;
+    }
+}
+
+@media (max-width:991px) {
+    .home-text h1{
+        font-size: 3rem;
+    }
+
+    .home-text{
+        padding: 0 5%;
+    }
+
+    .footer{
+        margin:0 20px;
+    }
+}
+
+@media (max-width:900px) {
+    .home-text h1{
+        font-size: 2.5rem;
+    }
+
+    header{
+        padding: 12px 4%;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+
+    .copyright{
+        padding:0 10px;
+    }
+
+    .footer{
+        margin:0 10px;
+    }
+}
+
+@media (max-width:470px) {
+    .home-text h1{
+        font-size: 2rem;
+    }
+
+    .home-text .play i{
+        font-size: 3rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .contact form .email{
+        width:auto;
+    }
+    
+}
+
+@media (max-width:370px){
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+
+    header{
+        padding: 6px 4%;
+
+    }
+
+    header .logo{
+        font-size: 15px;
+    }
+
+    header .btn{
+        padding: 0.4rem 0.6rem;
+    }
+
+    .home-text .play{
+        bottom: 8%;
+        right:1rem;
+    }
+
+    
+}
+
+/* Responsive section end  */
